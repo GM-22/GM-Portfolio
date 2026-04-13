@@ -7,20 +7,22 @@
 @theme {
   /* Colors */
   --color-black08: #080808; 
+
+  --color-black80: rgba(0, 0, 0, 0.8);
+  --color-black40: rgba(0, 0, 0, 0.4);
+  --color-white10: rgba(255, 255, 255, 0.1);
+  --color-white50: rgba(255, 255, 255, 0.50);
   --color-white: #FFFFFF; 
   --color-orange: #FF9330; 
    
 
   /* fonts  */
-   --font-DM: "DM Sans", sans-serif; 
-   --font-Syne: "Syne", sans-serif; 
-   --font-Oswald: "Oswald", sans-serif; 
-   --font-Inter: "Inter", sans-serif; 
+   --font-dm: "DM Sans", sans-serif; 
+   --font-syne: "Syne", sans-serif; 
+   --font-oswald: "Oswald", sans-serif; 
+   --font-inter: "Inter", sans-serif; 
 
 }
-
-@layer base{
   body{
-    @apply text-black08 font-Syne;
+    font-family: "Syne", sans-serif;
   }
-}
