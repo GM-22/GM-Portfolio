@@ -6,6 +6,8 @@ import linkdn from "../assets/linkdn.svg";
 import globe from "../assets/globe.svg";
 import github from "../assets/gitub.svg";
 import yellow_bg from "../assets/yellow_bg.svg";
+import { ArrowUp } from "lucide-react";
+import { Link } from "react-router";
 
 const Footer = () => {
   return (
@@ -71,8 +73,20 @@ const Footer = () => {
               />
             </div>
           </div>
-          <div></div>
-          <div></div>
+          <div className="mt-[72px] mb-[83px]">
+            <h1 className="  font-bold text-[#FFE9D9] text-[120px] leading-20  ">GOLAM MORSHED</h1>
+          </div>
+          <div className=" h-[52px] items-end flex justify-between border-t border-white20 ">
+            <div><p className="text-[18px] leading-7 text-white font-dm">©2026 GM, All Rights Reserved</p></div>
+            <div className=" flex items-center gap-2">
+              <Link to="/" className="">
+                <p className=" text-[18px] leading-7 text-white font-dm">
+                  Back to Top
+                </p>
+              </Link>
+              <ArrowUp className=" size-6 text-orange46" />
+            </div>
+          </div>
         </Container>
       </div>
     </footer>

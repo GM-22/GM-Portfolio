@@ -8,18 +8,21 @@ import github from '../assets/gitub.svg'
 import linkedin from '../assets/linkdn.svg'
 import be from '../assets/be.svg'
 import globe from '../assets/globe.svg'
+import banner from '../assets/banner_image.png'
+
 const Banner = () => {
   return (
-    <section>
+    <section className=' xl:w-full h-[850px] 2xl:min-h-screen lg:w-[1280px] relative top-0 left-0  bg-cover'  style={{ backgroundImage: `url(${banner})` }}>
         <Container>
-            <div>
-                <div>
+            <div className='flex gap-80 pt-35'> 
+                <div  className=" "
+ >
                     <div className=' flex gap-6 items-center'>
                         <hr className=' w-[65px] bg-black08 h-[0.5px] ' />
                         <h3 className=' text-[32px] font-bold leading-10  '>Hello, I'm</h3>
                     </div>
                     <div className=' relative mb-6 mt-2 '>
-                        <h1 className=' z-10 relative text-[140px] font-bold leading-[110px] max-w-[463px] '>Golam Morshed</h1>
+                        <h1 className='  z-10 relative text-[120px] font-bold leading-[110px] max-w-[463px] '>Golam Morshed</h1>
                         <img className=' absolute top-3 -left-2 size-22' src={yellow_bg} alt="" />
                     </div>
                     <p  className=' mb-[30px] text-[24px] font-bold leading-8 text-black80'>Frontend Developer</p>
@@ -42,6 +45,7 @@ const Banner = () => {
                         </div>
                     </div>
                 </div>
+               
             </div>
         </Container>
     </section>

@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const NavBar = () => {
   return (
-    <div className=" w-[1556px] mx-auto flex justify-between items-center border-b-[0.5px] border-b-black08/40 ">
+    <div className="pl-10 z-10 absolute w-full  flex justify-between items-center border-b-[0.5px] border-b-black08/40 ">
       <div className=" py-6 flex gap-2 items-center">
         <div>
           <img src={logo} alt="Logo" />

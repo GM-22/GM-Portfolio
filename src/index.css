@@ -1,19 +1,23 @@
-@import "tailwindcss"; 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import "tailwindcss"; 
 
 @theme {
   /* Colors */
   --color-black08: #080808; 
 
   --color-black80: rgba(0, 0, 0, 0.8);
+  --color-black60: rgba(0, 0, 0, 0.6);
   --color-black40: rgba(0, 0, 0, 0.4);
+  --color-black4: rgba(0, 0, 0, 0.04);
   --color-white10: rgba(255, 255, 255, 0.1);
+  --color-white20: rgba(255, 255, 255, 0.2);
   --color-white50: rgba(255, 255, 255, 0.50);
   --color-white: #FFFFFF; 
   --color-orange: #FF9330; 
+  --color-orange46: #FFB646; 
    
 
   /* fonts  */
@@ -22,7 +26,16 @@
    --font-oswald: "Oswald", sans-serif; 
    --font-inter: "Inter", sans-serif; 
 
+   --breakpoint-*: initial;
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+  
 }
   body{
     font-family: "Syne", sans-serif;
+    color: var(--color-black08);
+    
   }
